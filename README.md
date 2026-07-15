@@ -77,7 +77,6 @@ The proposed framework allows both feature representations to interact using Bid
 
 The core component of the framework is the bidirectional interaction between ConvNeXt and ViT features.
 
-
 ConvNeXt Features ───────► ViT Feature Attention
         ▲                           │
         │                           ▼
@@ -228,8 +227,10 @@ This allows pretrained feature representations to be fine-tuned conservatively w
 
 
 🚀 Training Pipeline
+
 Dataset Loading
        │
+       
        ▼
 Image Augmentation
        │
@@ -269,7 +270,9 @@ Macro F1 Evaluation
 📁 Project Structure
 completericeproject/
 │
+
 ├── config/
+
 │   └── config.yaml
 │
 ├── data/
