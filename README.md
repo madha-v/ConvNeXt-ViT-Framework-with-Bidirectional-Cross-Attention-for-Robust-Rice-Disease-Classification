@@ -23,6 +23,7 @@ The objective is to combine the strong local inductive bias of convolutional arc
                          Input Paddy Image
                                 │
                                 ▼
+                                
                       Image Preprocessing
                                 │
                  ┌──────────────┴──────────────┐
@@ -36,6 +37,7 @@ The objective is to combine the strong local inductive bias of convolutional arc
                  └──────────────┬──────────────┘
                                 │
                                 ▼
+                                
                  Bidirectional Cross-Attention
                                 │
                   ┌─────────────┴─────────────┐
@@ -75,10 +77,12 @@ The proposed framework allows both feature representations to interact using Bid
 
 The core component of the framework is the bidirectional interaction between ConvNeXt and ViT features.
 
+
 ConvNeXt Features ───────► ViT Feature Attention
         ▲                           │
         │                           ▼
 ViT Features ◄──────── ConvNeXt Feature Attention
+
 
 The ConvNeXt representation can attend to global transformer features, while transformer representations can simultaneously interact with local convolutional features.
 
@@ -367,7 +371,7 @@ The dataset contains 16,225 annotated paddy images across 13 classes and was int
 Madhav Joshi
 
 B.Tech Computer Science and Engineering
-Graphic Era Deemed to be University
+
 
 GitHub: madha-v
 
