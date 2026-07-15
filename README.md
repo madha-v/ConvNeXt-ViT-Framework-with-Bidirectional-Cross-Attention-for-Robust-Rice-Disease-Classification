@@ -226,6 +226,7 @@ classifier_lr = base_lr
 
 This allows pretrained feature representations to be fine-tuned conservatively while newly introduced layers adapt at a higher learning rate.
 
+
 🚀 Training Pipeline
 Dataset Loading
        │
@@ -263,7 +264,8 @@ Validation
 Macro F1 Evaluation
        │
        ▼
-Best Model Checkpoint
+
+       Best Model Checkpoint
 📁 Project Structure
 completericeproject/
 │
@@ -293,8 +295,9 @@ completericeproject/
 ├── requirements.txt
 ├── paddy_doctor_metadata.csv
 └── README.md
-🛠️ Installation
 
+
+🛠️ Installation
 Clone the repository:
 
 git clone https://github.com/madha-v/ConvNeXt-ViT-Framework-with-Bidirectional-Cross-Attention-for-Robust-Rice-Disease-Classification.git
