@@ -1,0 +1,24 @@
+project_name: "Rice-Disease-Classification-SOTA"
+
+data:
+  csv_path: "paddy_doctor_metadata.csv"
+  img_dir: "./train_images"
+  img_size: 224
+  batch_size: 32
+  num_workers: 4
+  split_ratio: 0.2
+
+model:
+  embed_dim: 768
+  num_heads: 8
+  dropout: 0.4
+  label_smoothing: 0.1
+
+training:
+  epochs: 40
+  base_lr: 5.0e-4
+  weight_decay: 0.05
+  ema_decay: 0.999
+  device: "cuda"
+  checkpoint_dir: "./checkpoints"
+  log_dir: "./logs"
