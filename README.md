@@ -233,20 +233,25 @@ Dataset Loading
        
        ▼
 Image Augmentation
+       
+       ▼ 
+ConvNeXt +ViT Forward Pass
        │
-       ▼
-ConvNeXt + ViT Forward Pass
-       │
+       
        ▼
 Bidirectional Cross-Attention
        │
+       
        ▼
 Adaptive Feature Fusion
        │
+       
        ▼
 Cross Entropy Loss
        │
+       
        ▼
+       
 AMP Backpropagation
        │
        ▼
@@ -258,12 +263,15 @@ AdamW Optimization
        ▼
 EMA Model Update
        │
+       
        ▼
 Validation
        │
+       
        ▼
 Macro F1 Evaluation
        │
+       
        ▼
 
        Best Model Checkpoint
