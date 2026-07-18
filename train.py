@@ -82,7 +82,7 @@ def main():
     # Dataset
     # =========================
 
-    print("📂 Building DataLoaders...")
+    print(" Building DataLoaders...")
 
     train_loader, val_loader, num_classes = build_loaders(config)
 
@@ -95,7 +95,7 @@ def main():
     # Model
     # =========================
 
-    print("🧠 Loading Hybrid ConvNeXt + ViT Model...")
+    print(" Loading Hybrid ConvNeXt + ViT Model...")
 
     model = ConvNeXtViTHybridModel(
         num_classes=num_classes,
@@ -164,7 +164,7 @@ def main():
     for epoch in range(config["training"]["epochs"]):
 
         print(
-            f"\n🚀 Epoch [{epoch + 1}/{config['training']['epochs']}]"
+            f"\n Epoch [{epoch + 1}/{config['training']['epochs']}]"
         )
 
         model.train()
@@ -247,7 +247,7 @@ def main():
         epoch_loss = running_loss / len(train_loader)
 
         print(
-            f"📉 Average Training Loss: {epoch_loss:.4f}"
+            f" Average Training Loss: {epoch_loss:.4f}"
         )
 
 
@@ -302,7 +302,7 @@ def main():
 
 
         print(
-            f"📊 Epoch [{epoch + 1:02d}] "
+            f" Epoch [{epoch + 1:02d}] "
             f"Accuracy: {metrics['accuracy']:.4f} | "
             f"Macro F1-Score: {metrics['f1_score']:.4f}"
         )
