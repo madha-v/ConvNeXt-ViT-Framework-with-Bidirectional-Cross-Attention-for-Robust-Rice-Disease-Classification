@@ -26,7 +26,7 @@ def main():
             labels_all.extend(labels.numpy())
 
     metrics = compute_metrics(labels_all, preds_all)
-    print("\n📊 --- FINAL BENCHMARK VERIFICATION REPORT ---")
+    print("\n📊 --- FINAL REPOTT OF THE PROJECT ---")
     print(f"Final Accuracy : {metrics['accuracy']*100:.2f}%")
     print(f"Macro Precision: {metrics['precision']:.4f}")
     print(f"Macro Recall   : {metrics['recall']:.4f}")
