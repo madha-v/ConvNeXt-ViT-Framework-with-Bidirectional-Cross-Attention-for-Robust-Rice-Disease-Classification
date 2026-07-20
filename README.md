@@ -77,10 +77,11 @@ The proposed framework allows both feature representations to interact using Bid
 
 The core component of the framework is the bidirectional interaction between ConvNeXt and ViT features.
 
-ConvNeXt Features ───────► ViT Feature Attention
+
+ConvNeXt Features ───────> ViT Feature Attention
         ▲                           │
         │                           ▼
-ViT Features ◄──────── ConvNeXt Feature Attention
+ViT Features  ◄──────── ConvNeXt Feature Attention
 
 
 The ConvNeXt representation can attend to global transformer features, while transformer representations can simultaneously interact with local convolutional features.
@@ -94,7 +95,7 @@ The framework uses the Paddy Doctor dataset.
 Dataset Characteristics
 Property	Description
 Dataset	Paddy Doctor
-Total Images	16,225
+Total Images	1,23444 ( more than 1 lakhs images )
 Number of Classes	13
 Disease Classes	12
 Healthy Class	1
@@ -273,8 +274,10 @@ Macro F1 Evaluation
        │
        
        ▼
+Best Model Checkpoint
 
-       Best Model Checkpoint
+
+
 📁 Project Structure
 completericeproject/
 │
@@ -383,10 +386,7 @@ The dataset contains 16,225 annotated paddy images across 13 classes and was int
 👨‍💻 Author
 
 Madhav Joshi
-
 B.Tech Computer Science and Engineering
-
-
 GitHub: madha-v
 
 ⭐ Support
